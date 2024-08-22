@@ -15,7 +15,7 @@ let city = document.getElementById("city");
 let postalCode = document.getElementById("postalCode");
 let messageForm = document.getElementById("messageForm");
 let state = document.getElementById("state");
-let sendBtn = document.getElementById("sendBtn");
+let form = document.getElementById("paymentForm");
 let message = document.getElementById("fieldsMissing");
 
 function formValidation(event) {
@@ -73,4 +73,4 @@ function formValidation(event) {
   console.log("procesed");
 }
 
-sendBtn.addEventListener("click", formValidation);
+form.addEventListener("submit", formValidation);
